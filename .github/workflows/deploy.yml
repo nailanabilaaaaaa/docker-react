@@ -24,10 +24,6 @@ jobs:
       - run: yarn install
       - run: yarn build
 
-      - run: npm ci
-      - run: npm run build
-      - run: npm test
-
       - name: 'Login to Dockerhub'
         uses: docker/login-action@v1
         with:
